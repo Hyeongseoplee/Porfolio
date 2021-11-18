@@ -34,11 +34,58 @@ a {
     align-items: center;
     justify-content: flex-end;
     text-transform: uppercase;
-    line-height: 1.9em;
+    line-height: 1.5em;
 }
 
 .link-menu:not(:first-child) {
     width: 100%;
     margin-left: 50px;
     text-align: end;
+}
+
+.link-menu:not(:last-child) {
+    background-position: 50% 100%;
+    background-size: 0% 1px;
+    background-image: linear-gradient(black, black);
+    background-repeat: no-repeat;
+    transition: background-size 0.2s linear;
+    margin-top: 3px;
+}
+
+.fromCenter {
+    background-position: 50% 100%;
+}
+
+.link-menu:not(:last-child):hover {
+    background-size: 100% 1px;
+}
+
+/* 
+.link-menu:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.link-menu:hover:not(:last-child):after {
+    width: 100%;
+} */
+
+.plus-button {
+    transform: rotate(-135deg);
+    cursor: pointer;
+}
+
+.fa-plus {
+    position: relative;
+    top: 2px;
+    font-size: 18px;
+    transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.rotated {
+    transform: rotate(135deg);
 }
