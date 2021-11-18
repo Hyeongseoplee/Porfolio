@@ -24,8 +24,13 @@
     -   photo
     -   description
 
-## what i use
+## What i use
 
 -   Html
 -   Css
 -   Js
+
+## Responsive size
+
+-   x <= 768px
+-   768px < x <= 1200px
