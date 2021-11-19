@@ -24,6 +24,12 @@
     -   photo
     -   description
 
+### Detail
+
+-   Header
+    -   x누르면 focus 된 nav 빼고 나머지는 오른쪽으로 사라지게 하기
+    -   선택된 nav의 border상태 유지
+
 ## What i use
 
 -   Html
